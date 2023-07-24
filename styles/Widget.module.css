@@ -1,0 +1,105 @@
+#container{
+  padding:5px;
+  width:100%;
+  max-width:100%;
+  margin-top:0px;
+  
+}
+#widgets{
+display:flex;
+width:100%;
+max-width:100%;
+}
+#widget , #dark{
+  margin-top:5px;
+  margin-left:0px;
+  padding:10px;
+  display:flex;
+  justify-content: space-between;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  border-radius: 10px;
+  height:130px;
+}
+#widget:hover{
+background-color: lightblue;
+}
+
+#dark:hover{
+  background-color: gray;
+}
+.left , .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  .title {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+  }
+
+  .counterNumbers {
+    width:100%;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 50px;
+    
+  }
+  .counterMoney {
+    width:100%;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 38px;
+    
+  }
+
+  .link {
+    width: max-content;
+    font-size: 12px;
+    border-bottom: 1px solid gray;
+  }
+  .link:hover{
+      color:blue;
+  }
+
+  .percentagePositive {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: green;
+    
+  }
+
+  .icon {
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    align-self: flex-end;
+  }
+  
+
+@media screen  and (max-width:760px){
+  #container{
+    margin-top:0px;
+    padding:8px;
+}
+
+#widgets{
+  display:flex;
+  flex-direction: column;
+}
+
+}
+
+@media screen  and (max-width:900px) and (min-width:760px){
+  #container{
+    margin-top:20px;
+    padding:8px;
+}
+
+
+
+}
